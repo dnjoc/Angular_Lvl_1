@@ -1,0 +1,88 @@
+<mdb-carousel [controls]="true" [indicators]="true">
+  <mdb-carousel-item>
+    <img
+      src="https://media.istockphoto.com/id/1041147560/es/foto/maravillas-de-mujer-irreconocible-en-selecci%C3%B3n-de-pan-de-supermercado.webp?b=1&s=170667a&w=0&k=20&c=MKcmtqnA76tPlWNMncVm-zcXH6cyQTPerv7d8Oss2Rs="
+      class="d-block w-100"
+      alt="..."
+    />
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img
+      src="https://media.istockphoto.com/id/1456881348/es/foto/crema-de-manos-en-el-interior-de-la-farmacia-con-estantes-de-punto-de-venta.webp?b=1&s=170667a&w=0&k=20&c=4_lZd7HZS2NxdKf1tirNsxnf2-zdikkwumZ-XsoU_Cw="
+      class="d-block w-100"
+      alt="..."
+    />
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img
+      src="https://images.unsplash.com/photo-1685257814437-ca3ce2d087eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHMlMjBvbiUyMHNoZWxmfGVufDB8fDB8fHww"
+      class="d-block w-100"
+      alt="..."
+    />
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img
+      src="https://media.istockphoto.com/id/1455018058/es/foto/mujer-en-la-farmacia-comprando-medicamentos.webp?b=1&s=170667a&w=0&k=20&c=y24V-3-gIkhMKi4zGWUvxsTCKiUMHEB56Wn86BAPdZE="
+      class="d-block w-100"
+      alt="..."
+    />
+  </mdb-carousel-item>
+</mdb-carousel>
+
+<div class="contenedorCards">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar style="background-image: url({{products[0].imagen}});" class="example-header-image"></div>
+      <mat-card-title>{{ products[0].titulo }}</mat-card-title>
+      <mat-card-subtitle>Precio: {{ products[0].precio }}$</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="products[0].imagen">
+    <mat-card-content>
+      <mat-card-subtitle>Tipo de envio: {{ products[0].tipoEnvio }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar style="background-image: url({{products[1].imagen}});" class="example-header-image"></div>
+      <mat-card-title>{{ products[1].titulo }}</mat-card-title>
+      <mat-card-subtitle>Precio: {{ products[1].precio }}$</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="products[1].imagen">
+    <mat-card-content>
+      <mat-card-subtitle>Tipo de envio: {{ products[1].tipoEnvio }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar style="background-image: url({{products[2].imagen}});" class="example-header-image"></div>
+      <mat-card-title>{{ products[2].titulo }}</mat-card-title>
+      <mat-card-subtitle>Precio: {{ products[2].precio }}$</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="products[2].imagen">
+    <mat-card-content>
+      <mat-card-subtitle>Tipo de envio: {{ products[2].tipoEnvio }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar style="background-image: url({{products[3].imagen}});" class="example-header-image"></div>
+      <mat-card-title>{{ products[3].titulo }}</mat-card-title>
+      <mat-card-subtitle>Precio: {{ products[3].precio }}$</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="products[3].imagen">
+    <mat-card-content>
+      <mat-card-subtitle>Tipo de envio: {{ products[3].tipoEnvio }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar style="background-image: url({{products[4].imagen}});" class="example-header-image"></div>
+      <mat-card-title>{{ products[4].titulo }}</mat-card-title>
+      <mat-card-subtitle>Precio: {{ products[4].precio }}$</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="products[4].imagen">
+    <mat-card-content>
+      <mat-card-subtitle>Tipo de envio: {{ products[4].tipoEnvio }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+</div>
