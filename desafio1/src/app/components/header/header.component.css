@@ -1,0 +1,18 @@
+nav{
+    flex-wrap: nowrap !important;
+    background-color: #FFE600 !important;
+}
+form input{
+    font-size: .8rem !important;
+    color: rgb(168, 168, 168) !important;
+}
+.span2{
+    font-weight: bolder;
+}
+nav div ul li a{
+    font-size: .8rem !important;
+}
+nav div a{
+    font-size: .8rem !important;
+}
+
