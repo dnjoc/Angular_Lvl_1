@@ -1,0 +1,74 @@
+
+<div id="intereces" class="container d-flex mt-3 mb-3">
+  <h5 class="card-title">También puede interesarte:</h5>
+  <p class="card-text ms-2 mb-0"> {{ product.intereses }} </p>
+</div>
+
+<div id="enlacesCard" class="container d-flex justify-content-between align-items-center">
+  <div class="links d-flex">
+    <p class="card-text mb-0" [routerLink]="['/principal']">Volver</p>
+    <p class="ms-3 mb-0 pt-1" style="color: rgb(150, 148, 148); font-size: .7rem !important;">|</p>
+    <p class="card-text text-primary ms-3 mb-0">{{ product.categorias.categoria1 }}</p>
+    <i class="bi bi-chevron-right ms-2 "></i>
+    <p class="card-text text-primary ms-2 mb-0">{{ product.categorias.categoria2 }}</p>
+    <i class="bi bi-chevron-right ms-2"></i>
+    <p class="card-text text-primary ms-2 mb-0">{{ product.categorias.categoria3 }}</p>
+  </div>
+
+ <div class="links d-flex">
+   <p class="card-text text-primary mb-0">Vender uno igual</p>
+   <p class="ms-3 mb-0 pt-1" style="color: rgb(150, 148, 148); font-size: .7rem !important;">|</p>
+   <p class="card-text text-primary ms-3 mb-0">Compartir</p>
+ </div>
+</div>
+
+<div class="container super">
+<div class="row">
+  <div class="contenedorAvatar">
+    <img [src]="product.imagenUrl" alt="Product image" class="imagenAvatar img1">
+    <img [src]="product.imagenUrl" alt="Product image" class="imagenAvatar">
+    <img [src]="product.imagenUrl" alt="Product image" class="imagenAvatar">
+  </div>
+  <div class="imag">
+  <img [src]="product.imagenUrl" alt="Product image" class="imagenPrincipal">
+  </div>
+  <div class="card" style="width: 19rem;">
+    <div class="card-body">
+      <div class="d-flex">
+        <p class="mb-0" style="color: rgb(150, 148, 148); font-size: .7rem !important;">Nuevo</p>
+        <p class="ms-2 mb-0 pt-1" style="color: rgb(150, 148, 148); font-size: .5rem !important;">|</p>
+        <p class="ms-2 mb-0" style="color: rgb(150, 148, 148); font-size: .7rem !important;">{{ product.ventas }} vendidos</p>
+      </div>
+      <div class="titulo">
+        <h4 class="card-title mt-2">{{ product.nombre }}</h4>
+        <i class="bi bi-heart ms-2 text-primary"></i>
+      </div>
+      <div class="opiniones">
+        <i class="bi bi-star-fill text-primary" style="font-size: .7rem !important;"></i>
+        <i class="bi bi-star-fill text-primary ms-1" style="font-size: .7rem !important;"></i>
+        <i class="bi bi-star-fill text-primary ms-1" style="font-size: .7rem !important;"></i>
+        <i class="bi bi-star-fill text-primary ms-1" style="font-size: .7rem !important;"></i>
+        <i class="bi bi-star ms-1" style="color: rgb(150, 148, 148); font-size: .7rem !important;"></i>
+      <p class="card-text ms-2" style="color: rgb(150, 148, 148); font-size: .7rem !important;">{{ product.opinion }} opiniones</p>
+
+      </div>
+      <h2 class="card-text mt-3 mb-0 fw-light">U$S {{ product.precio }} <i style="font-size: small; align-items: center" class="bi bi-question-circle text-primary"></i></h2>
+      <p class="card-text mb-0 fw-lighter">Bs. {{ product.precio * (36.35) }}</p>
+      <p class="card-text text-primary" style="font-size: .7rem !important;">Ver los medios de pago</p>
+
+      <p style="font-size: .9rem !important;" [ngClass]="{'text-success' : product.tipoEnvio == 'Gratis', 'text-primary': product.tipoEnvio == 'Acordado con el cliente', 'text-warning': product.tipoEnvio == 'Cobro en destino'}" class="card-text mb-0"><i class="bi bi-truck"></i> Envio {{ product.tipoEnvio }}</p>
+      <p class="card-text mb-0 ms-2" style="color: rgb(150, 148, 148); font-size: .7rem !important;">{{ product.ubicacion }}</p>
+
+      <p class="card-text text-primary ms-2" style="font-size: .9rem !important; font-size: .7rem !important;">Ver costo de envio</p>
+      <p class="card-text mt-3" style="color: rgb(123, 123, 123);">Color: <span class="text-body fw-bold">{{ product.color }}</span></p>
+      <div class="unidades mt-5">
+        <p class="card-text mb-0" style="font-size: .9rem !important; color: rgb(123, 123, 123);">Cantidad: <span class="text-body fw-bold">1 unidad</span> </p>
+        <i class="bi bi-chevron-down text-primary ms-2" style="font-size: .7rem !important;"></i>
+        <p class="card-text mb-0 ms-2" style="color: rgb(150, 148, 148); font-size: .7rem !important;">({{ product.unidad }} disponibles)</p>
+      </div>
+
+    </div>
+    <button class="btn btn-primary" type="button">Comprar ahora</button>
+  </div>
+</div>
+</div>

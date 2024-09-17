@@ -1,0 +1,68 @@
+.super{
+  height: 510px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contenedorAvatar{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.imagenAvatar{
+  margin-top: 10px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.contenedorAvatar .img1 {
+  border: 3px solid rgb(70, 70, 243) !important;
+}
+
+.imag{
+  border-radius: 10px;
+  width: 750px;
+  height: 450px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.imagenPrincipal{
+  width: 100%;
+  height: 485px;
+  border-radius: 10px;
+}
+.card{
+  margin-top: 10px;
+  height: 485px;
+}
+button{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.titulo{
+  display: flex;
+  align-items: center;
+}
+.titulo i{
+  font-size: 1.2rem;
+}
+.opiniones{
+  display: flex;
+}
+.unidades{
+  display: flex;
+  align-items: center;
+}
+#intereces h5{
+  font-size: .9rem;
+}
+#intereces p{
+  font-size: .8rem;
+}
+.links p, i{
+  font-size: .9rem;
+}
+
